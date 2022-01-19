@@ -1,5 +1,6 @@
 def study_schedule(permanence_period, target_time):
     """Faça o código aqui."""
+
     if type(target_time) is not int:
         return None
     count = 0
