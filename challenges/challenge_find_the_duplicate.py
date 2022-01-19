@@ -1,5 +1,5 @@
 def find_duplicate(nums):
-    """ Faça o código aqui. """
+    """ Faça o código aq. """
     if(len(nums) == 1):
         return False
 
