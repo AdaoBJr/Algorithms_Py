@@ -1,1 +1,1 @@
-is_palindrome_recursive("ANA")
++0
