@@ -1,4 +1,6 @@
-# for my reverse count https://stackoverflow.com/questions/869885/loop-backwards-using-indices-in-python
+# for my reverse count
+# https://stackoverflow.com/questions/
+# 869885/loop-backwards-using-indices-in-python
 
 def make_palindrome(word, low_index, high_index):
     palindrome = ''
