@@ -23,4 +23,3 @@ def is_anagram(first_string, second_string):
         list_second_string = order(second_string)
 
         return list_first_string == list_second_string
-        #
