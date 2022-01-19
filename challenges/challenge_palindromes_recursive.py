@@ -7,6 +7,9 @@ def is_palindrome_recursive(word, low_index, high_index):
     return is_palindrome_recursive(word[1:-1], word[0], word[-1])
 
 
+word = "ARARA"
+print(is_palindrome_recursive(word, 0, len(word) - 1))
+
 # https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
 
 # If a string has the first and last letters the same, and the remaining
