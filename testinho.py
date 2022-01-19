@@ -1,34 +1,20 @@
-from re import I, M
-
-
-def is_anagram(first_string, second_string):
+def find_duplicate(nums):
     """ Faça o código aqui. """
-    # mudança
-    listWord = list(first_string)
-
-    for i in range(len(listWord)):
-      minimum = i
-      for j in range(i + 1, len(listWord)):
-        if(listWord[j] < listWord[minimum]):
-          minimum = j
-
-      listWord[minimum], listWord[i] = listWord[i], listWord[minimum]
-
-    return "".join(listWord)
+    if(len(nums) == 1): return False
 
 
-    # if len(first_string) != len(second_string): return False
-
-    # sorted = False
-    # while not sorted:
-    #     for i in range(len(listWord)-1):
-    #         if listWord[i] > listWord[i+1]:
-    #             listWord[i+1], listWord[i] = listWord[i], listWord[i+1]
-    #             break
-    #     else:
-    #         sorted = True
-
-    # return "".join(listWord)
+    mylist = list(set(nums))
+    for num in mylist:
+        if(type(num) == str or num < 0): return False
+        if(nums.count(num) > 1):
+            return num
+        # else: return False
+    return False
 
 
-print(is_anagram('zxya', 'amdsor'))
+
+
+
+
+
+print(find_duplicate([1, 3, 4, 2, 2]))
