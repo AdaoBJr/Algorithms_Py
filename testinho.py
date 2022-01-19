@@ -1,18 +1,34 @@
+from re import I, M
 
-def is_palindrome_recursive(word, low_index, high_index):
+
+def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
-    if bool(word) == False: return False
-    # isPali = checkPalindrome(word)
-    # return isPali == word
-    isPali = ''
-    final = ''
-    if len(word) != 1:
-        result = is_palindrome_recursive(word[1:],1, 2)+word[0]
-        isPali =  result
-    else:
-        final = word
+    # mudança
+    listWord = list(first_string)
 
-    return isPali == final
+    for i in range(len(listWord)):
+      minimum = i
+      for j in range(i + 1, len(listWord)):
+        if(listWord[j] < listWord[minimum]):
+          minimum = j
+
+      listWord[minimum], listWord[i] = listWord[i], listWord[minimum]
+
+    return "".join(listWord)
 
 
-print(is_palindrome_recursive('ANA',1, 23))
+    # if len(first_string) != len(second_string): return False
+
+    # sorted = False
+    # while not sorted:
+    #     for i in range(len(listWord)-1):
+    #         if listWord[i] > listWord[i+1]:
+    #             listWord[i+1], listWord[i] = listWord[i], listWord[i+1]
+    #             break
+    #     else:
+    #         sorted = True
+
+    # return "".join(listWord)
+
+
+print(is_anagram('zxya', 'amdsor'))
