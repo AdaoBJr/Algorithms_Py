@@ -4,16 +4,16 @@
 # if len(first_string) != len(second_string): return False
 #   listWord = list(word)
 
-    # sorted = False
-    # while not sorted:
-    #     for i in range(len(listWord)-1):
-    #         if listWord[i] > listWord[i+1]:
-    #             listWord[i+1], listWord[i] = listWord[i], listWord[i+1]
-    #             break
-    #     else:
-    #         sorted = True
+# sorted = False
+# while not sorted:
+#     for i in range(len(listWord)-1):
+#         if listWord[i] > listWord[i+1]:
+#             listWord[i+1], listWord[i] = listWord[i], listWord[i+1]
+#             break
+#     else:
+#         sorted = True
 
-    # return "".join(listWord)
+# return "".join(listWord)
 
 # SELECTION SORT
 
@@ -34,11 +34,9 @@ def sort(word):
 
 def is_anagram(first_string, second_string):
 
-    if len(first_string) != len(second_string): return False
+    if len(first_string) != len(second_string):
+        return False
 
     first = sort(first_string)
     second = sort(second_string)
     return first == second
-
-
-
