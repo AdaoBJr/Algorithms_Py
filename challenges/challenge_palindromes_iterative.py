@@ -1,6 +1,6 @@
 def is_palindrome_iterative(word):
     """ Faça o código aqui. """
-    # word_list = list(word)
+    # verificação de string vazia python "Gleison"
     if not word:
         return False
     # i = len(word_list)
