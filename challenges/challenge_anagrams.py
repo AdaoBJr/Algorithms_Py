@@ -22,7 +22,7 @@ def sort_string(array_word):
         for j in range(i + 1, len(array_word)):
             if array_word[j] < array_word[minimum]:
                 minimum = j
-        print(array_word[minimum], array_word[i])
+
         aux = array_word[minimum]
         array_word[minimum] = array_word[i]
         array_word[i] = aux
