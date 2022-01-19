@@ -1,6 +1,5 @@
 # https://stackoverflow.com/questions/11964450/python-order-a-list-of-numbers-without-built-in-sort-min-max-function
 # o site acima foi dica do Zózimo.
-
 def sort(array):
     array = list(array)  # separa a string em uma lista
     new_list = []
