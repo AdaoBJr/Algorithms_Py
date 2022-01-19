@@ -3,10 +3,11 @@ def check_permance_numbers(permanence_period):
         for permance in permanence_period:
             return bool(isinstance(permance[0] and permance[1], int))
 
-def valid_target_time(target_time):
+
+def valid_time(target_time):
     valid_type = isinstance(target_time, int)
     return valid_type
-    
+
 
 # https://www.geeksforgeeks.org/count-the-number-of-intervals-in-which-a-given-value-lies/
 # https://stackoverflow.com/questions/61106572/how-to-check-if-list-only-contains-numbers
@@ -14,8 +15,7 @@ def valid_target_time(target_time):
 def study_schedule(permanence_period, target_time):
     best_time_to_post = 0
 
-
-    if check_permance_numbers(permanence_period) and valid_target_time(target_time):
+    if check_permance_numbers(permanence_period) and valid_time(target_time):
         for i in permanence_period:
             entrance = i[0]
             exit = i[1]
