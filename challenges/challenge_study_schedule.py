@@ -1,7 +1,7 @@
-def check_permance_numbers(permanence_period):
-    if len(permanence_period) > 0:
-        for permance in permanence_period:
-            return bool(isinstance(permance[0] and permance[1], int))
+# def check_permance_numbers(permanence_period):
+#     if len(permanence_period) > 0:
+#         for permance in permanence_period:
+#             return bool(isinstance(permance[0] and permance[1], int))
 
 
 def valid_time(target_time):
@@ -15,14 +15,17 @@ def valid_time(target_time):
 def study_schedule(permanence_period, target_time):
     best_time_to_post = 0
 
-    if check_permance_numbers(permanence_period) and valid_time(target_time):
+    if len(permanence_period) > 0 and valid_time(target_time):
         for i in permanence_period:
             entrance = i[0]
             exit = i[1]
-            if target_time <= exit and target_time >= entrance:
-                best_time_to_post += 1
+            if bool(isinstance(i[0] and i[1], int)):
+                if target_time <= exit and target_time >= entrance:
+                    best_time_to_post += 1
+            else:
+                return None
         return best_time_to_post
     else:
         return None
 
-# print(study_schedule([(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)], 5))
+# print(study_schedule([(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)], 3))
