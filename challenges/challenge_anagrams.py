@@ -1,15 +1,17 @@
 def is_anagram(first_string, second_string):
     if first_string == '' or second_string == '':
         return False
-    first_array = first_string.split()
-    second_array = second_string.split()
-    first_sorted = quicksort(first_array, 0, len(first_string) - 1)
-    second_sorted = quicksort(second_array, 0, len(second_string) - 1)
-    print(first_sorted, second_sorted)
-    if first_sorted == second_sorted:
-        return True
-    else:
+    elif len(first_string) != len(second_string):
         return False
+    else:
+        first_array = list(first_string)
+        second_array = list(second_string)
+        quicksort(first_array, 0, len(first_array) - 1)
+        quicksort(second_array, 0, len(second_array) - 1)
+        if "".join(first_array) == "".join(second_array):
+            return True
+        else:
+            return False
 
 
 def quicksort(array, low, high):
