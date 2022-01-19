@@ -11,7 +11,6 @@ def selection_sort(array):
     # percorre a estrutura exaustivamente
     # transforma a palavra em uma lista
     word = list(array)
-    print(word)
     # percorre a lista
     for i in range(len(word)):
         minimum = i
@@ -25,7 +24,3 @@ def selection_sort(array):
         word[minimum], word[i] = word[i], word[minimum]
 
     return word
-
-
-if __name__ == "__main__":
-    print(is_anagram("amor", "roma"))
