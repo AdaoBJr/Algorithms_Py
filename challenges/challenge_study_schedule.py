@@ -1,4 +1,3 @@
-
 def study_schedule(permanence_period, target_time):
     if target_time == 0 or type(target_time) != int:
         return None
@@ -9,6 +8,6 @@ def study_schedule(permanence_period, target_time):
         for entrada, saida in permanence_period:
             if type(entrada) != int or type(saida) != int:
                 return None
-            all_permanence.extend(range(entrada, saida+1))
-                
+            all_permanence.extend(range(entrada, saida + 1))
+
         return all_permanence.count(target_time)
