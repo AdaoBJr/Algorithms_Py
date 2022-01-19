@@ -6,9 +6,7 @@ def study_schedule(permanence_period, target_time):
         return None
 
     for student in permanence_period:
-        start = student[0]
-        end = student[1]
-        if type(start) is not int or type(end) is not int:
+        if type(student[0]) is not int or type(student[1]) is not int:
             return None
         # if(target_time in range(start, end))
         if(target_time >= start and target_time <= end):
