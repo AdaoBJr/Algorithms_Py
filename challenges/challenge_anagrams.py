@@ -4,7 +4,6 @@
 def sort(array):
     array = list(array)  # separa a string em uma lista
     new_list = []
-
     while array:
         minimum = array[0]
         for x in array:
