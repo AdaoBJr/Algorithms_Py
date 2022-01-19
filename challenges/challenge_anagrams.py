@@ -1,4 +1,6 @@
 def order(string):
+    # adaptado desse link
+    # https://stackoverflow.com/questions/11964450/python-order-a-list-of-numbers-without-built-in-sort-min-max-function
     list_string = [character for character in string]
     new_list_string = []
     while list_string:
@@ -14,7 +16,6 @@ def order(string):
 
 def is_anagram(first_string, second_string):
     """Faça o código aqui."""
-    # https://www.quora.com/How-do-I-sort-a-string-alphabetically-in-Python-without-using-the-sort-function
     if len(first_string) != len(second_string):
         return False
     else:
