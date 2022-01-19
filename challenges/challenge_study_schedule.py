@@ -12,7 +12,7 @@ def study_schedule(permanence_period, target_time):
 
             if e is True or c is True:
                 x += 1
-            
+
         return x
 
     except TypeError:
