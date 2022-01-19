@@ -1,3 +1,6 @@
+# https://app.betrybe.com/course/live-lectures/sd-cohort-9#aula-352-recursividade-e-estrategias-para-solucao-de-problemas
+
+
 def is_palindrome_recursive(word, low_index, high_index):
     if word == "":
         return False
