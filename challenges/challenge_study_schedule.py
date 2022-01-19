@@ -5,10 +5,9 @@ def study_schedule(permanence_period, target_time):
     try:
         x = 0
         for t in permanence_period:
-            e = t[0] == target_time or t[1] == target_time
             c = t[0] <= target_time and t[1] >= target_time
 
-            if e is True or c is True:
+            if c is True:
                 x += 1
         return x
 
