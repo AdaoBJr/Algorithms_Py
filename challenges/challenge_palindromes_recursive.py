@@ -14,7 +14,3 @@ def is_palindrome_recursive(word, low_index, high_index):
     if word1 == word:
         return True
     return False
-
-
-# is_palindrome_recursive(word, 0, len(word) - 1)
-# print(is_palindrome_recursive(word, 0, len(word) - 1))
