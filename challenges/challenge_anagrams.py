@@ -20,8 +20,3 @@ def quick_sort(lista):
                 lista[i] = lista[i+1]
                 lista[i+1] = temp
     return lista
-
-
-array = [2, 3, 5, 1, 4]
-
-print(quick_sort(array))
