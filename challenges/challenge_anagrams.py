@@ -9,7 +9,6 @@ def is_anagram(first_string, second_string):
 
     first_string = quick_sort(first_string)
     second_string = quick_sort(second_string)
-
     return first_string == second_string
 
 
