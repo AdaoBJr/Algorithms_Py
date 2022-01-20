@@ -2,7 +2,7 @@ def study_schedule(permanence_period, target_time):
     result = 0
     if type(target_time) is not int:
         return None
-    
+
     for time in permanence_period:
         if type(time[0]) is not int or type(time[1]) is not int:
             return None
