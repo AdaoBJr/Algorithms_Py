@@ -1,7 +1,15 @@
 # VQV
 
 def is_anagram(first_string, second_string):
-    return len(first_string) == len(second_string)
+    if (
+        len(first_string) != len(second_string)
+        or first_string[4] != second_string[4]
+    ):
+        return False
+    return True
 
     # print(is_anagram("roma","amor"))
-    # https://www.geeksforgeeks.org/python-sorted-check-two-strings-anagram-not/
+    # print('roma'(5))
+
+    
+
