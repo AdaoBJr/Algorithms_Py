@@ -33,7 +33,3 @@ def is_anagram(first_string, second_string):
     if merge_sort(list(first_string)) == merge_sort(list(second_string)):
         return True
     return False
-
-
-if __name__ == "__main__":
-    print(is_anagram("amor", "roma"))
