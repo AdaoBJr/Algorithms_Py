@@ -5,7 +5,7 @@ def study_schedule(permanence_period, target_time):
     for (login, logout) in permanence_period:
         if type(login) is not int or type(logout) is not int:
             return None
-        if login <= target_time >= logout:
+        if login <= target_time <= logout:
             count += 1
 
     return count
