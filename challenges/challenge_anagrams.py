@@ -28,4 +28,6 @@ def is_anagram(first_string, second_string):
     second_str_to_arr = second_string.split()
     first_length = len(first_str_to_arr) - 1
     secong_length = len(second_str_to_arr) - 1
-    return sort_string(first_str_to_arr, 0, first_length) == sort_string(second_str_to_arr, 0, secong_length)
+    first_str_sorted = sort_string(first_str_to_arr, 0, first_length)
+    second_str_sorted = sort_string(second_str_to_arr, 0, secong_length)
+    return (first_str_sorted == second_str_sorted)
