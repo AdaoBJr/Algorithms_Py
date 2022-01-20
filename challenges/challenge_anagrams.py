@@ -2,6 +2,7 @@ def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
     # Na tabela ascii cada letra possui um número e eles diferenciam
     # de maiscula pra minuscula
+    # for push comment
 
     first_string = list(first_string.lower())
     second_string = list(second_string.lower())
