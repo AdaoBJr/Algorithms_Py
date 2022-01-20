@@ -1,3 +1,8 @@
+# Source https://app.betrybe.com/course/computer-science/algoritmos/algoritmos
+# -de-ordenacao-e-busca/29521083-44ea-488d-a74d-216b1ac79b04/conteudos/6067288
+# 0-f607-40d3-92fc-e551b740a91f/algoritmos-de-ordenacao/fd503999-673b-443d-af
+# b1-ffcc5d1718f4?use_case=side_bar
+
 def merge_sort(array):
     if len(array) <= 1:
 
@@ -38,14 +43,7 @@ def is_anagram(first_string, second_string):
     return merge_sort(arr1) == merge_sort(arr2)
 
 
-first_string = "coxinha"
-second_string = "empada"
+# first_string = "coxinha"
+# second_string = "empada"
 
-print(is_anagram(first_string, second_string))
-
-# string = "coxinha"
-# array = list(string)
-# quicksort(array, 0, len(string) - 1)
-# print(''.join(array))
-
-
+# print(is_anagram(first_string, second_string))
