@@ -68,4 +68,7 @@ def is_anagram(first_string, second_string):
     first_string = list(first_string)
     second_string = list(second_string)
 
+    # gleison o algoritmo do bubble_sort tem muitos for
+    # por este motivo a uma redução na performance
+    # Não sei explicar o merge_sort apenas o bubble
     return merge_sort(first_string) == merge_sort(second_string)
