@@ -12,12 +12,17 @@ def bubble_sort(lista):
 def find_duplicate(nums):
     """ Faça o código aqui. """
     duplicate_num = 0
-    if not nums or type(nums) == str:
+    if not nums:
         return False
     orded_nums = bubble_sort(nums)
     for i in range(0, len(orded_nums) - 1, 1):
-        if orded_nums[i] == orded_nums[i + 1]:
-            duplicate_num = orded_nums[i]
-            return duplicate_num
+        try:
+            if orded_nums[i] < 0 or type(orded_nums[i]) == str:
+                return False
+            if orded_nums[i] == orded_nums[i + 1]:
+                duplicate_num = orded_nums[i]
+                return duplicate_num
+        except TypeError:
+            return False
 
     return False
