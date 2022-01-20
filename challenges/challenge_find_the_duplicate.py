@@ -22,5 +22,5 @@ def find_duplicate(nums):
 # *https://www.w3schools.com/python/ref_func_isinstance.asp
 # **https://www.delftstack.com/pt/howto/python/python-find-duplicates-in-list/
 
-nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
-print(find_duplicate(nums))
+# nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
+# print(find_duplicate(nums))

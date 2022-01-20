@@ -20,6 +20,6 @@ def is_anagram(first_string, second_string):
     return sort(first_string) == sort(second_string)
 
 
-first_string = "pedra"
-second_string = "perda"
-print(is_anagram(first_string, second_string))
+# first_string = "pedra"
+# second_string = "perda"
+# print(is_anagram(first_string, second_string))
