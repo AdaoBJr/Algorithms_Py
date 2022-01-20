@@ -1,7 +1,7 @@
 def study_schedule(permanence_period, target_time):
     student = 0
 
-    if target_time == None:
+    if target_time is None:
         return None
 
     for (inicio, fim) in permanence_period:
