@@ -13,3 +13,6 @@ def is_palindrome_recursive(word, low_index, high_index):
         return True
     else:
         return is_palindrome_recursive(word[1:-1], low_index, high_index)
+
+
+# print(is_palindrome_recursive("ANA", 0, -1))
