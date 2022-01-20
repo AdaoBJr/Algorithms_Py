@@ -36,7 +36,7 @@ def is_anagram(first_string, second_string):
     first_string_ordened = merge_sort(list(first_string))
     second_string_ordened = merge_sort(list(second_string))
 
-    return first_string_ordened == second_string_ordened  
+    return first_string_ordened == second_string_ordened
 
 
 result = is_anagram('pedra', 'pesda')
