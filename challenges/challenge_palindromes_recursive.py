@@ -1,3 +1,6 @@
+# Source https://www.portugal-a-programar.pt/forums/topic/72774
+# -pal%C3%ADndrome-em-python-funcional/
+
 def is_palindrome_recursive(word, low_index, high_index):
 
     if word == '':
