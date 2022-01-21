@@ -1,2 +1,23 @@
+def ordened(dale):
+    new_string = []
+    old_string = list(dale)
+    while dale:
+        mini = old_string[0]
+        for x in old_string:
+            if x < mini:
+                mini = x
+        new_string.append(mini)
+        if len(old_string) != 1:
+            old_string.remove(mini)
+        else:
+            break
+    return ''.join(new_string)
+    
+
+
 def is_anagram(first_string, second_string):
-    pass
+    one = ordened(first_string)
+    two = ordened(second_string)
+    if one == two:
+        return True
+    return False
