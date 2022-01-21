@@ -1,6 +1,3 @@
-from unicodedata import numeric
-
-
 def find_duplicate(nums):
     if nums is None or len(nums) <= 2 or isinstance(nums, str):
         return False
