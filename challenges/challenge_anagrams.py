@@ -13,11 +13,8 @@ def is_anagram(first_string, second_string):
     for i in second_string:
         count2[ord(i)] += 1
 
-    if len(first_string) != len(second_string):
-        return False
-
     for i in range(n_caracteres):
-        if count1[i] != count2[i]:
+        if count1[i] != count2[i] or len(first_string) != len(second_string):
             return False
 
     return True
