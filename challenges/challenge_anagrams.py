@@ -1,8 +1,5 @@
 def is_anagram(first_string, second_string):
     """ A ord()função retorna um inteiro representando o caractere Unicode. """
-    if first_string == "":
-        return False
-
     if(len(first_string) != len(second_string)):
         return False
 
