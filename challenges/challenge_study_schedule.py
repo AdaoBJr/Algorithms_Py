@@ -3,7 +3,8 @@ def study_schedule(permanence_period, target_time):
     if not isinstance(target_time, int):
         return None
         # isinstance retorna true se for um número inteiro, nesse caso
-        # verifica se deu falso https://www.w3schools.com/python/ref_func_isinstance.asp
+        # verifica se deu falso 
+        # https://www.w3schools.com/python/ref_func_isinstance.asp
     for people in permanence_period:
         if not isinstance(people[0], int) or not isinstance(people[1], int):
             return None
