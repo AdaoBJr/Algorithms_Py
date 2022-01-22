@@ -1,8 +1,5 @@
 def is_anagram(first_string, second_string):
     """ A ord()função retorna um inteiro representando o caractere Unicode. """
-    if(len(first_string) != len(second_string)):
-        return False
-
     count1 = [0] * 256
     count2 = [0] * 256
 
@@ -13,7 +10,7 @@ def is_anagram(first_string, second_string):
         count2[ord(i)] += 1
 
     for i in range(256):
-        if count1[i] != count2[i]:
+        if count1[i] != count2[i] or len(first_string) != len(second_string):
             return False
 
     return True
