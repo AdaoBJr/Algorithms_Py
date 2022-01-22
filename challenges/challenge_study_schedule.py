@@ -4,13 +4,16 @@ def study_schedule(permanence_period, target_time):
 
     students_present = 0
     for student_permanence_hours in permanence_period:
-        checkIn, CheckOut = (
-            student_permanence_hours[0],
-            student_permanence_hours[1],
-        )
-        if type(checkIn) is not int or type(CheckOut) is not int:
+        if (
+            type(student_permanence_hours[0]) is not int
+            or type(student_permanence_hours[1]) is not int
+        ):
             return None
-        if checkIn <= target_time <= CheckOut:
-            amount += 1
+        if (
+            student_permanence_hours[0]
+            <= target_time
+            <= student_permanence_hours[1]
+        ):
+            students_present += 1
 
     return students_present
