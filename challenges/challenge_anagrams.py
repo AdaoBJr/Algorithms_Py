@@ -1,7 +1,7 @@
 def merge_sort(array):
     if len(array) <= 1:
         return array
-    mid = len(array) // 2 # retorna inteiro
+    mid = len(array) // 2  # retorna inteiro
     left, right = merge_sort(array[:mid]), merge_sort(array[mid:])
     # left ignora o primeira e right o segunda letra
     return merge(left, right, array.copy())
