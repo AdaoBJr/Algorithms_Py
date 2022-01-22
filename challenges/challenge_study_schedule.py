@@ -13,4 +13,4 @@ def study_schedule(permanence_period, target_time):
             contador += 1
     return contador
 # https://pt.stackoverflow.com/questions/176525/como-posso-saber-se-a-vari%C3%A1vel-%C3%A9-um-n%C3%BAmero-inteiro-em-python
-# Agradeço ao pedro henrique e o Lukas pela ajuda
+# Agradeço ao pedro henrique pela ajuda
