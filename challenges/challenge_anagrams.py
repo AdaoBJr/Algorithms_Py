@@ -8,10 +8,8 @@ def is_anagram(first_string, second_string):
 
     count1 = [0] * 256
     count2 = [0] * 256
-    count = 0
 
     for i in first_string:
-        count += 1
         count1[ord(i)] += 1
 
     for i in second_string:
