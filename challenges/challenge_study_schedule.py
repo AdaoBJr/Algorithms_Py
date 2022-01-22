@@ -10,4 +10,4 @@ def study_schedule(permanence_period, target_time):
             return None
         if input_data <= target_time <= output_data:
             result += 1
-        return result
+    return result
