@@ -4,9 +4,6 @@ def study_schedule(permanence_period, target_time):
     amount = 0
     for periods in permanence_period:
 
-        if periods is None:
-            return None
-
         first_value = periods[0]
         second_value = periods[1]
 
