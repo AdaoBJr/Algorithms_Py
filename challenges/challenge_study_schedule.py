@@ -1,5 +1,5 @@
 def study_schedule(permanence_period, target_time):
-    """ Faça o código aqui. """
+    """Faça o código aqui."""
     quantityStudents = 0
     if target_time is None:
         return None
@@ -11,5 +11,6 @@ def study_schedule(permanence_period, target_time):
         if entrada <= target_time <= saida:
             quantityStudents += 1
     return quantityStudents
-    # Na função o parãmentro permanence-period vão as tuplas do range de horarios 
-    # e no target_time o horario a se testar a quantidade de alunos
+    # Na função o parãmentro permanence-period vão as tuplas do range
+    # de horarios e no target_time o horario a se testar a
+    # quantidade de alunos
