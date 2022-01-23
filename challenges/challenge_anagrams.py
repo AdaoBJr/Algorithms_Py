@@ -1,8 +1,17 @@
 def is_anagram(first_string, second_string):
-    if len(first_string) != len(second_string):
+    if len(first_string) == 0 or len(second_string) == 0:
+        print("morreu aki")
         return False
-    valor_a = list(first_string)
-    a = "".join(sorted(valor_a))
-    valor_b = list(second_string)
-    b = "".join(sorted(valor_b))
-    return a == b
+    if len(first_string) != len(second_string):
+        print(first_string, second_string)
+        return False
+    if len(first_string) == 1 and len(second_string) == 1:
+        return first_string == second_string
+    for letter in first_string:
+        if letter in second_string:
+            newSecond = second_string.replace(letter, "", 1)
+            return is_anagram(first_string[1:], newSecond)
+        else:
+            return False
+
+# print(is_anagram("pedra", "perda"))
