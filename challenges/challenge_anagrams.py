@@ -1,4 +1,4 @@
-# Source: 
+# Source:
 # https://stackoverflow.com/questions/13101468/python-how-to-sort-the-alphabet-in-a-list-without-sorted-functions
 
 def quicksort(string):
