@@ -1,14 +1,12 @@
 def study_schedule(permanence_period, target_time):
-    counter = 0
-    position = 0
-
-    while position < len(permanence_period):
-        start = permanence_period[position][0]
-        end = permanence_period[position][1]
-        try:
-            if start <= target_time <= end:
-                counter += 1
-            position += 1
-        except TypeError:
-            return None
+    try:
+        time_validation = [
+            tupla
+            for tupla in permanence_period
+            if tupla[0] <= target_time <= tupla[1]
+        ]
+        if time_validation != []:
+            counter = len(time_validation)
+    except TypeError:
+        return None
     return counter
