@@ -1,5 +1,5 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    """ Faça o código aqui. """
+    """ Faça o código aqui. ahbdja"""
     if not word:
         return False
     if low_index == high_index or low_index > high_index:
