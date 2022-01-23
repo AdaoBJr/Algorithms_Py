@@ -7,8 +7,8 @@ def bubble_sort(array):
                 temporary = array[i]
                 array[i] = array[i+1]
                 array[i+1] = temporary
-    
-    return array 
+
+    return array
 
 
 # https://flexiple.com/convert-string-to-list-in-python/
