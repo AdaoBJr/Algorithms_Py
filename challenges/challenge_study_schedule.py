@@ -1,8 +1,6 @@
 def study_schedule(permanence_period, target_time):
     counter = 0
     position = 0
-    if target_time in (0, None):
-        return None
 
     while position < len(permanence_period):
         start = permanence_period[position][0]
