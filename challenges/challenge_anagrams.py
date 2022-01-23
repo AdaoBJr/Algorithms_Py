@@ -15,5 +15,5 @@ def is_anagram(first_string, second_string):
     order_second_string = order_string(second_string)
     if order_first_string == order_second_string:
         return True
-    else: 
+    else:
         return False
