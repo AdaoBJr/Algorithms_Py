@@ -1,11 +1,11 @@
 def order_string(string):
-    abc = {}
+    abcdary = {}
     for l in string:
-        if l in abc:
-            abc[l] += 1
+        if l in abcdary:
+            abcdary[l] += 1
         else:
-            abc[l] = 1
-    return abc
+            abcdary[l] = 1
+    return abcdary
 
 
 def is_anagram(first_string, second_string):
@@ -15,4 +15,5 @@ def is_anagram(first_string, second_string):
     order_second_string = order_string(second_string)
     if order_first_string == order_second_string:
         return True
-    else: return False
+    else: 
+        return False
