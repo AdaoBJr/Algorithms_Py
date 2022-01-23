@@ -1,8 +1,3 @@
-""" def target(target_time):
-    if type(target_time) != int or target_time is None:
-        return None """
-
-
 def study_schedule(permanence_period, target_time):
     try:
         left_pointer = 0
@@ -18,6 +13,11 @@ def study_schedule(permanence_period, target_time):
 
             left_pointer += 1
 
-        return all_period.count(target_time)
+            count = all_period.count(target_time)
+
+        # https://pt.stackoverflow.com/questions/161505/em-python-existe-opera%C3%A7%C3%A3o-tern%C3%A1ria
+        return count if count != 0 else None
+
+        # return all_period.count(target_time)
     except TypeError:
         return None
