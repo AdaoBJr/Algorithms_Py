@@ -1,9 +1,4 @@
-from array import array
-from contextlib import redirect_stderr
-
-from black import first_leaf_column
-
-
+# req 3 com a ajuda do Eder para realizar o sort
 def bubble_sort(array):
     size = len(array)-1
     for position in range(size, 0, -1):
@@ -15,8 +10,8 @@ def bubble_sort(array):
     
     return array 
 
-# https://flexiple.com/convert-string-to-list-in-python/
 
+# https://flexiple.com/convert-string-to-list-in-python/
 def is_anagram(first_string, second_string):
     if first_string is None or second_string is None:
         return False
@@ -33,3 +28,4 @@ def is_anagram(first_string, second_string):
         return True
     else:
         return False
+        
