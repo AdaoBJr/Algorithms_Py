@@ -1,10 +1,15 @@
-def order_str(first, second):
-    anagram = ''
-    for f in first:
-        for s in second:
-            if f == s:
-                anagram += s
-    return anagram
+def order_str(str):
+    list_string = list(str)
+    anagram_list = []
+
+    while len(list_string) > 0:
+        min = list_string[0]
+        for f in list_string:
+            if f < min:
+                min = f
+        anagram_list.append(min)
+        list_string.remove(min)
+    return anagram_list
 
 
 def is_anagram(first_string, second_string):
@@ -12,11 +17,10 @@ def is_anagram(first_string, second_string):
     if first_string == '' or second_string == '':
         return False
 
-    anagram = order_str(first_string, second_string)
+    anagram1 = order_str(first_string)
+    anagram2 = order_str(second_string)
 
-    if first_string == anagram:
+    if anagram1 == anagram2:
         return True
 
     return False
-
-# print(is_anagram('', 'pato'))
