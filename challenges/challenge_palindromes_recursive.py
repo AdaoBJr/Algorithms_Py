@@ -1,17 +1,14 @@
-reverse = []
+# https://github.com/tryber/sd-10b-live-lectures/blob/lecture/35.2/exercicios/inverte.py
+def inverte(lista):
+    if not lista or len(lista) == 1:
+        return lista
+    return [lista[-1]] + inverte(lista[:-1])
 
 
 def is_palindrome_recursive(word, low_index, high_index):
-    lista = list(word)
+    string = inverte(list(word))
 
-    if len(word) < 2:
-        return word
-    else:
-        # reverse = ""
-        reverse = (
-            is_palindrome_recursive(word[1:], low_index, high_index - 1)
-            + word[0]
-        )
+    if word == "" or None:
+        return False
 
-    if reverse == lista:
-        True
+    return True if string == list(word) else False
