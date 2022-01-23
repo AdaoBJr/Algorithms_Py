@@ -8,4 +8,3 @@ def is_palindrome_recursive(word, low_index, high_index):
     else:
         valor = word[1:][:-1]
         return is_palindrome_recursive(valor, 0, len(valor) - 1)
-

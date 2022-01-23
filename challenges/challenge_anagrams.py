@@ -1,8 +1,6 @@
 def is_anagram(first_string, second_string):
-    if len(first_string) == 0 or len(second_string) == 0:
-        print("morreu aki")
-        return False
-    if len(first_string) != len(second_string):
+    if len(first_string) != len(second_string) or len(
+            first_string) == 0 or len(second_string) == 0:
         print(first_string, second_string)
         return False
     if len(first_string) == 1 and len(second_string) == 1:
@@ -13,5 +11,6 @@ def is_anagram(first_string, second_string):
             return is_anagram(first_string[1:], newSecond)
         else:
             return False
+
 
 # print(is_anagram("pedra", "perda"))
