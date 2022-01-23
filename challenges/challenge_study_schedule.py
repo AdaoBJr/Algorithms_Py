@@ -1,19 +1,16 @@
-def validation(tupla):
-    for ele in tupla:
-        if ele is None or isinstance(ele, str):
-            return False
-    return True
-
-
 def study_schedule(permanence_period, target_time):
     counter = 0
+    position = 0
     if target_time in (0, None):
         return None
 
-    for schedule in permanence_period:
-        if validation(schedule) is False:
+    while position < len(permanence_period):
+        start = permanence_period[position][0]
+        end = permanence_period[position][1]
+        try:
+            if start <= target_time <= end:
+                counter += 1
+            position += 1
+        except TypeError:
             return None
-        elif schedule[0] <= target_time <= schedule[1]:
-            counter += 1
-
     return counter
