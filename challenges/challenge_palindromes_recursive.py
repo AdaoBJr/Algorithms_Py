@@ -9,8 +9,6 @@ def is_palindrome_recursive(word, low_index, high_index):
     reversed = reverse(word)
     if word is None or word == "":
         return False
-    elif len(word) < 2 and low_index == high_index:
-        return True
     elif word == reversed:
         return True
     return False
