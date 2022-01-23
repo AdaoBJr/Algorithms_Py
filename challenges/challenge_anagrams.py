@@ -1,10 +1,10 @@
 def order_string(string):
     abcdary = {}
-    for l in string:
-        if l in abcdary:
-            abcdary[l] += 1
+    for letter in string:
+        if letter in abcdary:
+            abcdary[letter] += 1
         else:
-            abcdary[l] = 1
+            abcdary[letter] = 1
     return abcdary
 
 
