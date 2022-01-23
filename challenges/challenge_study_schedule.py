@@ -1,12 +1,17 @@
+def validation(tupla):
+    for ele in tupla:
+        if ele is None or isinstance(ele, str):
+            return False
+    return True
+
+
 def study_schedule(permanence_period, target_time):
     counter = 0
-    if target_time == 0 or target_time is None:
+    if target_time in (0, None):
         return None
 
     for schedule in permanence_period:
-        if isinstance(schedule, str):
-            return None
-        elif schedule[0] is None or schedule[1] is None:
+        if validation(schedule) is False:
             return None
         elif schedule[0] <= target_time <= schedule[1]:
             counter += 1
