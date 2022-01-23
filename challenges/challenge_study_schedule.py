@@ -4,9 +4,7 @@ def study_schedule(permanence_period, target_time):
     if target_time is None:
         return None
     for entrada, saida in permanence_period:
-        if entrada is None:
-            return None
-        if saida is None:
+        if entrada is None or saida is None:
             return None
         if entrada <= target_time <= saida:
             quantityStudents += 1
