@@ -1,9 +1,11 @@
+import re
+
+
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
-    if first_string == second_string:
-        return True
-    if len(first_string) != len(second_string):
-        return False
+    first_string = re.sub("[^0-9a-zA-Z]+", "", first_string)
+    second_string = re.sub("[^0-9a-zA-Z]+", "", second_string)
+
     char_map_one = [0]*26
     char_map_two = [0]*26
 
