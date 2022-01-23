@@ -1,5 +1,4 @@
 def is_palindrome_recursive(word, initialIndex, lastIndex):
-    # print(word, initialIndex, lastIndex)
     if word == '' or word[initialIndex] != word[lastIndex]:
         return False
 
