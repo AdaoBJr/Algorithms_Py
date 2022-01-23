@@ -1,3 +1,4 @@
+# Funcao reverse com recursividade retirada do course
 def reverse(list):
     if len(list) < 2:
         return list
