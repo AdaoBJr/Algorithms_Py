@@ -9,5 +9,7 @@ def is_palindrome_iterative(word):
     else:
         return False
 
-# FONTE método reversed(): https://www.tutorialsteacher.com/python/reversed-method
-# FONTE método reversed(): https://www.delftstack.com/pt/howto/python/reverse-a-string-python/
+# FONTE método reversed():
+# https://www.tutorialsteacher.com/python/reversed-method
+# FONTE método reversed():
+# https://www.delftstack.com/pt/howto/python/reverse-a-string-python/
