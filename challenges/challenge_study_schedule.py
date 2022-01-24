@@ -1,8 +1,7 @@
 def study_schedule(permanence_period, target_time):
+    response = 0
     if target_time is None:
         return None
-
-    response = 0
     for period in permanence_period:
         if None in period:
             return None
