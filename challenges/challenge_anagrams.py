@@ -1,11 +1,11 @@
 def sort_string(string):
-    string_list = list(string)
+    str_lst = list(string)
 
     for i in range(1, len(string)):
-        if string_list[i] < string_list[i - 1]:
-            string_list[i], string_list[i - 1] = string_list[i - 1] , string_list[i]
+        if str_lst[i] < str_lst[i - 1]:
+            str_lst[i], str_lst[i -1] = str_lst[i - 1], str_lst[i]
 
-    return ''.join(string_list)
+    return ''.join(str_lst)
 
 
 def is_anagram(first_string, second_string):
