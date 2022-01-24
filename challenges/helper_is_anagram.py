@@ -8,6 +8,3 @@ def is_anagram_recursive(fst_string, sec_string, fst_index, sec_index):
             fst_string, sec_string, fst_index + 1, sec_index + 1
         )
     return True
-
-
-print(is_anagram_recursive("roma", "amor", 0, 3))
