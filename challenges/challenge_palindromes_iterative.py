@@ -8,6 +8,7 @@ def is_palindrome_iterative(word):
         return False
 
     if word == reverse:
+        # palmindrome = asa reverse = asa
         return True
 
     return False
