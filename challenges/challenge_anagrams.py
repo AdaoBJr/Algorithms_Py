@@ -3,7 +3,7 @@ def sort_string(string):
 
     for i in range(1, len(string)):
         if str_lst[i] < str_lst[i - 1]:
-            str_lst[i], str_lst[i -1] = str_lst[i - 1], str_lst[i]
+            str_lst[i], str_lst[i - 1] = str_lst[i - 1], str_lst[i]
 
     return ''.join(str_lst)
 
