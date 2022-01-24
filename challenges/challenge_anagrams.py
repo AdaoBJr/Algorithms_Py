@@ -1,4 +1,4 @@
-from util_functions import is_anagram_recursive
+from challenges.util_functions import is_anagram_recursive
 
 
 def is_anagram(first_string, second_string):
