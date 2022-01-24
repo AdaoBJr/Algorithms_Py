@@ -7,4 +7,3 @@ def primes(n):
 
 def letter_to_prime(letter):
     return primes(letters.find(letter))
-    
