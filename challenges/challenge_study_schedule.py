@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time):
 
     if target_time is None:
         return None
-    
+
     for student in permanence_period:
         if student[0] is None or student[1] is None:
             return None
@@ -14,5 +14,4 @@ def study_schedule(permanence_period, target_time):
 
 
 teste = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
-
 print(study_schedule(teste, None))
