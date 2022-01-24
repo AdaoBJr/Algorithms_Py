@@ -9,3 +9,5 @@ def is_palindrome_iterative(word):
 
     if word == reverse:
         return True
+
+    return False
