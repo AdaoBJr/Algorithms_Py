@@ -2,7 +2,6 @@ def study_schedule(permanence_period, target_time):
     # Verifica se o horário passado (target_time) é um número
     if type(target_time) is not int:
         return None
-
     students = 0
     for permanence in permanence_period:
         # Verifica se a hora de entrada...
