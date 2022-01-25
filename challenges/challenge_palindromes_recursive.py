@@ -1,15 +1,15 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    # verifica se word não é uma string vazia
     if not word:
         return False
-    # verifica se o último elemento da string é igual ao primeiro...
-    # Caso sejam, esta palavra PODE ser um palíndromo.
-    if word[low_index] != word[high_index]:
+    if word[0] != word[-1]:
         return False
-    # verifica se low_index é maior ou igual o high_index. (Caso Base)
-    if low_index >= high_index:
+    if len(word) == 2 and word[0] == word[-1]:
         return True
-    return is_palindrome_recursive(word, low_index + 1, high_index - 1)
+    if len(word) <= 1:
+        return True
+    return is_palindrome_recursive(word[1:-1], low_index, high_index)
+
 
 # FONTE: encurtador.com.br/ehuSV
+# FONTE: https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
 # Comparecimento ao plantão onde João me judou na formulação do caso base
