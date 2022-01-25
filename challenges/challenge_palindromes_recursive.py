@@ -11,5 +11,7 @@ def is_palindrome_recursive(word, low_index, high_index):
 
 
 # FONTE: encurtador.com.br/ehuSV
-# FONTE: https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
+# FONTE:
+# https:
+# //stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
 # Comparecimento ao plantão onde João me judou na formulação do caso base
