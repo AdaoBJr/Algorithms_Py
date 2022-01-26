@@ -1,11 +1,11 @@
 def merge_sort(string):
     letter_list = list(string)
-    length = len(letter_list)
+    list_length = len(letter_list)
 
-    if length <= 1:
+    if list_length <= 1:
         return letter_list
 
-    mid = length // 2
+    mid = list_length // 2
 
     list_left = merge_sort(letter_list[:mid])
     list_right = merge_sort(letter_list[mid:])
@@ -13,25 +13,25 @@ def merge_sort(string):
     return merge(list_left, list_right, letter_list.copy())
 
 
-def merge(left, right, merged):
-    index_left, index_right = 0, 0
+def merge(list_left, list_right, array_copy):
+    i_left, i_right = 0, 0
 
-    while (index_left < len(left) and index_right < len(right)):
+    while (i_left < len(list_left) and i_right < len(list_right)):
 
-        if left[index_left] <= right[index_right]:
-            merged[index_left + index_right] = left[index_left]
-            index_left += 1
+        if list_left[i_left] <= list_right[i_right]:
+            array_copy[i_left + i_right] = list_left[i_left]
+            i_left += 1
         else:
-            merged[index_left + index_right] = right[index_right]
-            index_right += 1
+            array_copy[i_left + i_right] = list_right[i_right]
+            i_right += 1
 
-    for index_left in range(index_left, len(left)):
-        merged[index_left + index_right] = left[index_left]
+    for i_left in range(i_left, len(list_left)):
+        array_copy[i_left + i_right] = list_left[i_left]
 
-    for index_right in range(index_right, len(right)):
-        merged[index_left + index_right] = right[index_right]
+    for i_right in range(i_right, len(list_right)):
+        array_copy[i_left + i_right] = list_right[i_right]
 
-    return merged
+    return array_copy
 
 
 def is_anagram(first_string, second_string):
