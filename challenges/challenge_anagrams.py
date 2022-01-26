@@ -7,7 +7,8 @@ def merge_sort(string):
 
     mid = length // 2
 
-    list_left, list_right = merge_sort(letter_list[:mid]), merge_sort(letter_list[mid:])
+    list_left = merge_sort(letter_list[:mid])
+    list_right = merge_sort(letter_list[mid:])
 
     return merge(list_left, list_right, letter_list.copy())
 
@@ -36,7 +37,7 @@ def merge(left, right, merged):
 def is_anagram(first_string, second_string):
     first_list = merge_sort(first_string)
     second_list = merge_sort(second_string)
-    
+
     if first_list == second_list:
         return True
     else:
