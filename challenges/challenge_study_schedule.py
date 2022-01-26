@@ -7,7 +7,3 @@ def study_schedule(permanence_period, target_time):
     except TypeError:
         return None
     return counter
-
-
-permanence = [(2, None), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
-study_schedule(permanence, None)
