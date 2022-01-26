@@ -26,6 +26,14 @@ def permanence_period_is_valid(permanence_period):
 def number_of_students_present(permanence_period, target_time):
     number = 0
     for entry_time, departure_time in permanence_period:
+        if (
+            entry_time is None
+            or departure_time is None
+            or isinstance(entry_time, int) is False
+            or isinstance(departure_time, int) is False
+            or departure_time < entry_time
+        ):
+            return False
         if entry_time <= target_time <= departure_time:
             number += 1
 
@@ -42,11 +50,11 @@ def study_schedule(permanence_period, target_time):
     if (
         target_time is None
         or permanence_period is None
-        or permanence_period_is_valid(permanence_period) is False
+        # or permanence_period_is_valid(permanence_period) is False
     ):
         return None
 
-    max_students = number_of_students_present(permanence_period, target_time)
+    result = number_of_students_present(permanence_period, target_time)
 
     # for t_time in range(target_time, 0, -1):
     #     number = number_of_students_present(permanence_period, t_time)
@@ -54,7 +62,7 @@ def study_schedule(permanence_period, target_time):
     #     if number > max_students:
     #         max_students = number
 
-    return max_students
+    return result
 
 
 # if __name__ == "__main__":
