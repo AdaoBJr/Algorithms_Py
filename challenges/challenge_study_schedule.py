@@ -20,6 +20,9 @@ def permanence_period_is_valid(permanence_period):
 """
    Material consultado sobre iteração sobre lista de tuplas
    https://code-maven.com/python-iterate-list-of-tuples
+
+   Material consultado sobre checar se é do tipo int
+   https://python-reference.readthedocs.io/en/latest/docs/float/is_integer.html
 """
 
 
@@ -27,8 +30,8 @@ def number_of_students_present(permanence_period, target_time):
     number = 0
     for entry_time, departure_time in permanence_period:
         if (
-            not isinstance(entry_time, int)
-            or not isinstance(departure_time, int)
+            not type(entry_time) is int
+            or not type(departure_time) is int
             or departure_time < entry_time
         ):
             return None
