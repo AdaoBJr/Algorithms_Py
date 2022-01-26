@@ -11,6 +11,8 @@ def is_anagram(first_string, second_string):
         return False    
 
 # https://stackoverflow.com/questions/11964450/python-order-a-list-of-numbers-without-built-in-sort-min-max-function
+
+
 def ordena(word):
     word = list(word)
     new_list = []
