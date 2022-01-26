@@ -33,7 +33,7 @@ def number_of_students_present(permanence_period, target_time):
             or isinstance(departure_time, int) is False
             or departure_time < entry_time
         ):
-            return False
+            return None
         if entry_time <= target_time <= departure_time:
             number += 1
 
