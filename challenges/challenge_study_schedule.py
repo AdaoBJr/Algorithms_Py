@@ -27,10 +27,8 @@ def number_of_students_present(permanence_period, target_time):
     number = 0
     for entry_time, departure_time in permanence_period:
         if (
-            entry_time is None
-            or departure_time is None
-            or isinstance(entry_time, int) is False
-            or isinstance(departure_time, int) is False
+            not isinstance(entry_time, int)
+            or not isinstance(departure_time, int)
             or departure_time < entry_time
         ):
             return None
